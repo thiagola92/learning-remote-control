@@ -14,4 +14,14 @@ O objetivo é aprender a conectar em outra máquina local.
 
 # Graphical Interface
 * [VNC](vnc/README.md)
+  * VNC é um protocolo simples
+    * É como se tirasse um print da tela do server e transmitisse para o client.  
+    * Os controles passados pelo client são processados no server como se fosse ele mesmo executando (mouse movendo, teclas do teclado, ...).  
 * [RDP](rdp/README.md)
+  * RDP é um protocolo complicado
+    * Tem idéia do que são botões, fontes de texto e outras coisas gráficas básicas. Comprime essa informação antes de enviar pela rede e recria ela no client.  
+      * VNC - transmite a imagem de um botão
+      * RDP - transmite que existe um botão de largura *W* e altura *H*, na posição *X* e *Y*  
+    * Funciona da mesma maneira como se um usuário tivesse logando na máquina.  
+      * Por padrão apenas um usuário pode estar logado em uma conta ao mesmo tempo, por isso é preciso deslogar da conta para o client acessar.  
+      * Por causa disso é possível que multiplas pessoas acessem usuários diferentes na mesma máquina.  
