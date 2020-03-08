@@ -1,13 +1,18 @@
 # Information
-O objetivo é aprender a conectar em outra máquina local.  
+O objetivo é aprender a conectar em outra máquina.  
 
-**Rede**: Local  
 **Sistema operacional**: Ubuntu  
 
 **Client**: Máquina que vai acessar outra  
 **Server**: Máquina que vai ser acessada  
 
 **Descobrir o IP Local**: `ip addr show`  
+**Descobrir o IP Público**: Pesquise "IP" no Google  
+
+# Rede Pública
+Para que um client fora da sua rede local se conecte ao seu server, é preciso fazer um redirecionamento no seu roteador.  
+
+[Configurando o MEU roteador](/public/README.md)
 
 # Command-line Interface
 * [SSH](ssh/README.md)
