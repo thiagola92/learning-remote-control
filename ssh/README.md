@@ -9,6 +9,14 @@
   * Digite a senha do usuário
   * Confirme a criação de chave
     * Apenas necessário na primeira vez que fizer conexão
+    
+## Stop using password
+Utilizar senha toda vez que você for se conectar não é uma boa prática. É recomendado você gerar uma chave pública e privada na sua máquina e copiar a pública para a máquina que você deseja acessar.  
+
+* Criar chave pública e privada:  
+  * `ssh-keygen`
+* Copiar para a outra máquina:
+  * `ssh-copy-id <user>@<ip>`
 
 # Server
 * Instalar OpenSSH Server  
@@ -28,3 +36,4 @@
 
 # Font
 https://likegeeks.com/ssh-connection-refused/  
+https://serverfault.com/questions/241588/how-to-automate-ssh-login-with-password  
